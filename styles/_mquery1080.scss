@@ -1,0 +1,180 @@
+@media screen and (min-width: 1080px) {
+  .box {
+    justify-content: flex-start;
+    &__message {
+      font-size: 4rem;
+      width: fit-content;
+      border: 2px solid $white;
+      padding-right: 4rem;
+
+      span {
+        display: flex;
+        flex-direction: row;
+
+        p {
+          padding-right: 1.5rem;
+        }
+      }
+    }
+  }
+  .interactive {
+    display: flex;
+    position: relative;
+
+    .interactive-img {
+      content: url(.././images/desktop/image-interactive.jpg);
+      max-width: 60%;
+    }
+
+    &__textbox {
+      background: white;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 53%;
+      padding-left: 5%;
+      height: 55%;
+
+      h1 {
+        font-family: "Josefin Sans";
+        font-weight: lighter;
+        font-size: 3rem;
+        margin-top: 4rem;
+        margin-bottom: 1.5rem;
+        text-align: left;
+      }
+      p {
+        color: #8c8c8c;
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        text-align: left;
+      }
+    }
+  }
+  .main {
+    overflow: visible;
+  }
+  .container {
+    @include setBackground(url(.././images/desktop/image-hero.jpg));
+  }
+  .nav {
+    label {
+      display: none;
+    }
+
+    .menu {
+      position: unset;
+      background: unset;
+      height: unset;
+      justify-content: flex-end;
+      text-transform: capitalize;
+      display: flex;
+      font-size: 1.2rem;
+      font-weight: bold;
+
+      li {
+        padding: 0 1.2rem;
+      }
+    }
+  }
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 1fr 1fr;
+    gap: 1rem;
+    grid-template-areas:
+      "a a j j"
+      "b c d e"
+      "f g h i";
+
+    & > div {
+      height: 550px;
+
+      p {
+        opacity: 1;
+      }
+
+      &:nth-child(1) {
+        height: 150px;
+        justify-content: center;
+        text-align: left;
+        grid-area: a;
+      }
+      &:nth-child(2) {
+        @include setBackground(url(.././images/desktop/image-deep-earth.jpg));
+        grid-area: b;
+      }
+      &:nth-child(3) {
+        @include setBackground(url(.././images/desktop/image-night-arcade.jpg));
+        grid-area: c;
+      }
+      &:nth-child(4) {
+        @include setBackground(url(.././images/desktop/image-soccer-team.jpg));
+        grid-area: d;
+      }
+      &:nth-child(5) {
+        @include setBackground(url(.././images/desktop/image-grid.jpg));
+        grid-area: e;
+      }
+      &:nth-child(6) {
+        @include setBackground(url(.././images/desktop/image-from-above.jpg));
+        grid-area: f;
+      }
+      &:nth-child(7) {
+        @include setBackground(
+          url(.././images/desktop/image-pocket-borealis.jpg)
+        );
+        grid-area: g;
+      }
+      &:nth-child(8) {
+        @include setBackground(url(.././images/desktop/image-curiosity.jpg));
+        grid-area: h;
+      }
+      &:nth-child(9) {
+        @include setBackground(url(.././images/desktop/image-fisheye.jpg));
+        grid-area: i;
+      }
+      &:nth-child(10) {
+        height: 150px;
+        justify-content: center;
+        align-items: flex-end;
+        grid-area: j;
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content:space-between;
+
+    img {
+      margin-bottom: 0;
+      align-self: flex-start;
+    }
+
+    ul {
+      display: flex;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      li {
+        margin: 0 1rem;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+      
+
+    }
+  }
+  .footer_right {
+    align-items: flex-end;
+
+    img {
+      width: 80%;
+    }
+  }
+
+  .social {
+    margin-bottom: 2rem;
+  }
+
+}
