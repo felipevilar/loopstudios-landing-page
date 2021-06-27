@@ -129,4 +129,14 @@
       </div>
     </footer>
   </body>
+
+  <script>
+    const checkBox = document.querySelector(".toogle");
+    checkBox.addEventListener("change", updateBody);
+    updateBody();
+
+    function updateBody() {
+      document.body.style.overflow = checkBox.checked ? "hidden" : "visible";
+    }
+  </script>
 </html>

@@ -41,29 +41,29 @@ body {
     display: none;
     z-index: 2;
   }
-  #toogle:checked ~ .nav {
-    position:fixed;
-    border: 2px solid green;
-  }
-  #toogle:checked ~ .menu {
-    padding-left: 1rem;
-    padding-top: 14rem;
-    height: 100%;
-  }
 
+  #toogle:checked ~ .menu {
+    height: 100vh;
+    transition: all .1s ease-in-out;
+  }
+  
   #toogle:checked ~ .images {
     content: url(.././images/icon-close.svg);
   }
-
+  
   .menu {
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background: black;
     width: 100%;
     height: 0;
     left: 0;
     top: 0;
     overflow: hidden;
-    transition: all 0.1s ease;
+    padding-left: 7%;
+    transition: all .1s ease-in-out;
   }
 
   ul {
@@ -74,7 +74,7 @@ body {
     line-height: 3rem;
     z-index: 1;
   }
-
+  
   a {
     opacity: 0.8;
     color: $white;
@@ -289,8 +289,8 @@ footer {
   img {
     padding: 0 0.5rem;
     width: 3.3rem;
-    transition: all .2s ease-in-out;
-    
+    transition: all 0.2s ease-in-out;
+
     &:hover {
       transform: scale(1.3);
     }
@@ -300,15 +300,15 @@ footer {
 .footer_left {
   display: flex;
   flex-direction: column;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
 .footer_right {
   display: flex;
   flex-direction: column;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
