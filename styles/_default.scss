@@ -243,6 +243,7 @@ body {
 footer {
   background: black;
 }
+
 .footer {
   height: 100%;
   padding-top: 3rem;
@@ -304,6 +305,7 @@ footer {
   align-items: center;
   text-align: center;
 }
+
 .footer_left {
   @extend .footer_responsive;
 }
