@@ -21,7 +21,7 @@ Your users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-##Feedback & Contact
+## Feedback & Contact
 Feedback is always welcome, if you any sugestion please let me know
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
